@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Витя - Портфолио</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        
+        .main-content, .sidebar {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .skill-item, .project-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Витя</h1>
+            <p class="tagline">Фриланс-разработчик и программист</p>
+            <p>Создаю эффективные цифровые решения с чистым кодом</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <section class="about">
+                <h2>Обо мне</h2>
+                <p>Привет! Я Витя, фриланс-разработчик, специализирующийся на создании простых и эффективных веб-решений. Фокусируюсь на качестве работы, соответствующем потребностям клиента.</p>
+            </section>
+            
+            <section class="projects">
+                <h2>Мои проекты</h2>
+                <div class="project-item">
+                    <h3>Шаблон бизнес-сайта</h3>
+                    <p>Адаптивный HTML/CSS шаблон для малого бизнеса</p>
+                </div>
+                <div class="project-item">
+                    <h3>Инструмент обработки данных</h3>
+                    <p>Python скрипт для автоматизации обработки Excel/CSV данных</p>
+                </div>
+                <div class="project-item">
+                    <h3>Услуга настройки WordPress</h3>
+                    <p>Полная установка WordPress и базовая кастомизация</p>
+                </div>
+            </section>
+            
+            <section class="skills">
+                <h2>Технические навыки</h2>
+                <div class="skill-item">
+                    <strong>Фронтенд:</strong> HTML5, CSS3, JavaScript (базовый)
+                </div>
+                <div class="skill-item">
+                    <strong>Бэкенд:</strong> Python, Node.js (начинающий)
+                </div>
+                <div class="skill-item">
+                    <strong>Инструменты:</strong> Git, WordPress, VS Code
+                </div>
+            </section>
+        </div>
+        
+        <div class="sidebar">
+            <section class="contact">
+                <h2>Контакты и информация</h2>
+                <ul class="contact-info">
+                    <li>📍 Доступен для удаленной работы по всему миру</li>
+                    <li>📧 vitav2904@gmail.com</li>
+                    <li>💼 Фриланс-проекты приветствуются</li>
+                    <li>⚡ Быстрые сроки выполнения</li>
+                    <li>💰 Конкурентные цены</li>
+                </ul>
+            </section>
+            
+            <section class="services">
+                <h2>Услуги</h2>
+                <div class="skill-item">
+                    <strong>Разработка сайтов</strong>
+                    <p>Простые бизнес-сайты</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Скрипты автоматизации</strong>
+                    <p>Python/JS для повторяющихся задач</p>
+                </div>
+                <div class="skill-item">
+                    <strong>Помощь с WordPress</strong>
+                    <p>Настройка и базовая кастомизация</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2026 Витя - Фриланс-разработчик</p>
+        <p>Портфолио регулярно обновляется</p>
+    </footer>
+</body>
+</html>
